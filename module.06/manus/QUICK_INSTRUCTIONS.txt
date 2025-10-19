@@ -1,0 +1,51 @@
+=================================================================
+QUICK INSTRUCTIONS FOR USING WITH MANUS AI
+=================================================================
+
+STEP 1: Upload These Files to Manus
+------------------------------------
+1. MANUS_PROMPT.md (MAIN - has everything)
+2. PRESENTATION_DATA.txt (Quick data reference)
+3. Python_Generated_Presentation.pdf (Show Manus what to improve upon)
+
+Optional: Manually copy the PowerPoint template from parent folder:
+- "2024-capstone-story-template 2.pptx"
+
+STEP 2: Give Manus This Command
+--------------------------------
+"Create a professional, visually stunning PowerPoint presentation 
+following all instructions in MANUS_PROMPT.md. Use PRESENTATION_DATA.txt 
+for all statistics. Make it MORE visually appealing than the 
+Python_Generated_Presentation.pdf while keeping the same content. 
+Output both .pptx and .pdf formats named 'DataAnalystPresentation'."
+
+STEP 3: What You Should Get
+----------------------------
+- DataAnalystPresentation.pptx (editable PowerPoint)
+- DataAnalystPresentation.pdf (final submission file)
+
+STEP 4: Quality Check
+----------------------
+✓ All 18 slides present
+✓ Beautiful modern design
+✓ All data accurate
+✓ Charts professionally styled
+✓ Ready to submit
+
+=================================================================
+THAT'S IT! Let Manus do the heavy lifting! 🎨✨
+=================================================================
+
+KEY POINTS:
+- MANUS_PROMPT.md has EVERYTHING Manus needs
+- All content, all data, all design specs
+- Grading criteria included
+- Just upload and let Manus create!
+
+EXPECTED RESULT:
+A presentation that:
+✅ Looks 10x better than Python version
+✅ Has all the same accurate content
+✅ Meets all 19 grading criteria
+✅ Is ready for submission
+✅ Impresses everyone!
