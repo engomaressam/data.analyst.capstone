@@ -1,0 +1,10 @@
+import pandas as pd
+df = pd.read_csv('https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/VYPrOu0Vs3I0hKLLjiPGrA/survey-data-with-duplicate.csv')
+print(f'Rows: {len(df)}')
+print(f'Columns: {len(df.columns)}')
+print(f'Age dtype: {df["Age"].dtype}')
+print(f'Sample ages:')
+print(df["Age"].head(10))
+print(f'Age value counts:')
+print(df["Age"].value_counts())
+print(f'Countries: {df["Country"].nunique()}')
