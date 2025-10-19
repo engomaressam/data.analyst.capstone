@@ -16,7 +16,7 @@ Create a professional, visually stunning PowerPoint presentation from the provid
 #### Slide 1: Title Slide
 - **Project Title:** Stack Overflow Developer Survey Analysis
 - **Subtitle:** Data Analyst Professional Certificate Capstone Project
-- **Author:** Diaa
+- **Author:** Omar Essam
 - **Date:** October 2025
 - **Technologies:** Python • Pandas • SQL • Plotly • Data Analysis
 
@@ -288,7 +288,7 @@ This analysis provides a comprehensive, data-driven foundation for strategic tec
 
 **K. Code Repository:** github.com/engomaressam/data.analyst.capstone
 
-**Contact:** Diaa | GitHub: github.com/engomaressam/data.analyst.capstone
+**Contact:** Omar Essam | GitHub: github.com/engomaressam/data.analyst.capstone
 
 ---
 

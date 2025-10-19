@@ -23,7 +23,7 @@ import os
 # Configuration
 OUTPUT_DIR = './outputs/'
 PDF_OUTPUT = f'{OUTPUT_DIR}DataAnalystPresentation.pdf'
-AUTHOR_NAME = "Diaa"
+AUTHOR_NAME = "Omar Essam"
 PROJECT_TITLE = "Stack Overflow Developer Survey Analysis"
 DATE = "October 2025"
 
@@ -366,25 +366,50 @@ def create_findings_placeholder_slide(elements, styles, title, description, imag
     )
     elements.append(Paragraph(description, desc_style))
     
-    # Placeholder for chart
+    # Try to find and embed chart image
     if image_path and os.path.exists(image_path):
-        img = Image(image_path, width=9*inch, height=5*inch)
-        elements.append(img)
+        try:
+            img = Image(image_path, width=9*inch, height=5*inch)
+            elements.append(img)
+        except:
+            # If image fails to load, show styled placeholder
+            elements.append(Spacer(1, 1.5*inch))
+            elements.append(Paragraph(f"<b>[Chart: {title}]</b>", styles['Normal']))
+            elements.append(Spacer(1, 1.5*inch))
     else:
-        # Placeholder box
-        placeholder_style = ParagraphStyle(
-            'Placeholder',
-            parent=styles['Normal'],
-            fontSize=14,
-            textColor=colors.grey,
-            alignment=TA_CENTER,
-            borderWidth=2,
-            borderColor=colors.grey,
-            borderPadding=20
-        )
-        elements.append(Spacer(1, 2*inch))
-        elements.append(Paragraph(f"[Chart: {title}]<br/>Generate visualizations with dashboard_builder.py", placeholder_style))
-        elements.append(Spacer(1, 2*inch))
+        # Check for chart in charts directory
+        chart_name = None
+        if 'Languages' in title and 'Current' in title:
+            chart_name = 'languages_current.png'
+        elif 'Languages' in title and 'Future' in title:
+            chart_name = 'languages_future.png'
+        elif 'Database' in title and 'Current' in title:
+            chart_name = 'databases_current.png'
+        elif 'Database' in title and 'Future' in title:
+            chart_name = 'databases_future.png'
+        elif 'Job' in title:
+            chart_name = 'job_postings.png'
+        
+        if chart_name:
+            chart_path = f"{OUTPUT_DIR}charts/{chart_name}"
+            if os.path.exists(chart_path):
+                try:
+                    img = Image(chart_path, width=9*inch, height=5*inch)
+                    elements.append(img)
+                except:
+                    elements.append(Spacer(1, 1.5*inch))
+                    elements.append(Paragraph(f"<b>[Chart: {title}]</b>", styles['Normal']))
+                    elements.append(Spacer(1, 1.5*inch))
+            else:
+                # Styled placeholder if no chart found
+                elements.append(Spacer(1, 1.5*inch))
+                elements.append(Paragraph(f"<b>[Chart: {title}]</b>", styles['Normal']))
+                elements.append(Paragraph("<i>Note: Run chart_generator.py to create visualizations</i>", styles['Normal']))
+                elements.append(Spacer(1, 1.5*inch))
+        else:
+            elements.append(Spacer(1, 1.5*inch))
+            elements.append(Paragraph(f"<b>[Chart: {title}]</b>", styles['Normal']))
+            elements.append(Spacer(1, 1.5*inch))
     
     elements.append(PageBreak())
 

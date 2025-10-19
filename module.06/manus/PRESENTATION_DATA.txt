@@ -271,7 +271,7 @@ Presentation Quality:
 
 ## CONTACT & LINKS
 
-Author: Diaa
+Author: Omar Essam
 Date: October 2025
 GitHub: github.com/engomaressam/data.analyst.capstone
 Status: 100% Complete, Portfolio-Ready

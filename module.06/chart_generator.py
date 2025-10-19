@@ -8,7 +8,7 @@ Generates all required charts for the final presentation:
 - Job postings analysis
 - Dashboard screenshots
 
-Author: Diaa
+Author: Omar Essam
 Date: October 2025
 """
 

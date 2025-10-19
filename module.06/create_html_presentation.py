@@ -13,7 +13,7 @@ import os
 
 OUTPUT_DIR = './outputs/'
 HTML_OUTPUT = f'{OUTPUT_DIR}DataAnalystPresentation.html'
-AUTHOR_NAME = "Diaa"
+AUTHOR_NAME = "Omar Essam"
 PROJECT_TITLE = "Stack Overflow Developer Survey Analysis"
 DATE = "October 2025"
 
