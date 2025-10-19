@@ -1,0 +1,153 @@
+# Data Analyst Capstone - .gitignore
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============================================
+# Jupyter Notebook
+# ============================================
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+
+# ============================================
+# IPython
+# ============================================
+profile_default/
+ipython_config.py
+
+# ============================================
+# Virtual Environments
+# ============================================
+venv/
+ENV/
+env/
+.venv
+env.bak/
+venv.bak/
+
+# ============================================
+# IDEs
+# ============================================
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ============================================
+# Operating System
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+
+# ============================================
+# Data Files (Large/Temporary)
+# ============================================
+# Large datasets (over 100MB - GitHub limit)
+data/survey_results_public.csv
+data/*.csv
+*.csv.gz
+*.zip
+*.tar.gz
+*.7z
+
+# Temporary data files
+*.tmp
+*.temp
+*_temp.*
+*_backup.*
+
+# ============================================
+# Database Files
+# ============================================
+# SQLite databases (comment out if you want to commit them)
+# *.sqlite
+# *.sqlite3
+# *.db
+
+# Database backups
+*.db.bak
+*.sqlite.bak
+
+# ============================================
+# Logs
+# ============================================
+*.log
+logs/
+*.out
+
+# ============================================
+# Testing
+# ============================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# ============================================
+# Documentation Build
+# ============================================
+docs/_build/
+site/
+
+# ============================================
+# Environment Variables
+# ============================================
+.env
+.env.local
+.env.*.local
+
+# ============================================
+# Misc
+# ============================================
+*.swp
+*.swo
+*.bak
+*~
+.cache/
